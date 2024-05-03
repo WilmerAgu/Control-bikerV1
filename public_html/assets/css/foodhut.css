@@ -11231,13 +11231,19 @@ pre {
   text-align: center;
 }
 .mb-ppal{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 10rem;
   font-weight: 800;
 }
 .text-ppal{
   font-weight: 700;
+  margin-top: 3rem;
 }
+.btns-ppal {
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+
+
 
 .header .overlay {
   height: 100%;
