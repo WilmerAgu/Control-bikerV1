@@ -11220,7 +11220,7 @@ pre {
 
 .overlay {
   position: absolute;
-  top: -9%;
+  top: -10%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -11231,7 +11231,7 @@ pre {
   text-align: center;
 }
 .mb-ppal{
-  margin-top: 10rem;
+  margin-top: 15rem;
   font-weight: 800;
 }
 .text-ppal{
@@ -11239,7 +11239,8 @@ pre {
   margin-top: 3rem;
 }
 .btns-ppal {
-  margin-top: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
