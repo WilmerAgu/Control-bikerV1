@@ -11180,22 +11180,16 @@ pre {
   padding: 10px 10px;
   font-size: 1.25rem;
   margin-bottom: 50px;
-  outline: none;
-}
-.btn-ver {
+  outline: none !important;
+  transition: transform 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
+
 .btn-ver:hover {
   background-color: var(--primary); /* Cambia a un color oscuro al pasar el mouse */
   color: #fff; /* Cambia a blanco al pasar el mouse */
+  transform: scale(1.1);
 }
-.btn-ver {
-  transition: transform 0.3s;
-}
-.btn-ver:hover {
-  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
-}
-
 .btn-ver:active {
   transform: scale(0.95); /* Reduce ligeramente el tamaño al hacer clic */
 }
