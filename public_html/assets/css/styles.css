@@ -11163,6 +11163,25 @@ pre {
   transition: all 0.2s linear 0s;
   border-radius: 50%;
 }
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.btn-ver{
+  display: inline-block;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 10px 10px;
+  font-size: 1.25rem;
+  margin-bottom: 50px;
+  outline: none;
+}
 
 .navbar-brand .brand-txt {
   position: absolute;
