@@ -11179,7 +11179,7 @@ pre {
   border-radius: 0.2rem;
   padding: 10px 10px;
   font-size: 1.25rem;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   outline: none !important;
   transition: transform 0.3s;
   transition: background-color 0.3s, color 0.3s;
@@ -11192,6 +11192,15 @@ pre {
 }
 .btn-ver:active {
   transform: scale(0.95); /* Reduce ligeramente el tamaño al hacer clic */
+}
+.google-play {
+  background-image: url(../imgs/googleplay.png);
+  background-repeat: no-repeat;
+  background-size: contain; 
+  width: 150px; 
+  height: 80px; 
+  outline: none !important;
+  border: none;
 }
 
 .navbar-brand .brand-txt {
