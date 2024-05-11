@@ -217,33 +217,25 @@
                 <i class="gallary-icon ti-plus"></i>
             </a>
         </div>
-             
-    </div>
+            
 
-    <!-- book a table Section  -->
+    <!-- dejanos tu mensaje -->
     <div class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items" id="book-table">
-
-        <div class="form-content">
-            <h2 class="section-title mb-5">Envíanos un mensaje</h2>
-            <form action="https://formsubmit.co/controlbiker2024@gmail.com" method="POST" id="contact-form" class="row">
         <div class="">
-            <div class="row mb-5">
-                <div class="col-sm-6 col-md-4 col-xs-12 my-2">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" class="form-control form-control-lg custom-form-control" required>
+            <h2 class="section-title mb-5">Envianos Tu Mensaje</h2>
+            <form action="https://formsubmit.co/controlbiker2024@gmail.com" method="POST" id="contact-form" class="row">
+                <div class="row mb-5">
+                    <div class="col-sm-6 col-md-4 col-xs-12 my-2">
+                        <input type="text" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xs-12 my-2">
+                        <input type="email" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="Email" max="20" min="0">
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xs-12 my-2">
+                        <input type="text" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="Mensaje">
+                    </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-xs-12 my-2">
-                    <label for="email" class="form-label">Tu correo</label>
-                    <input type="email" name="correo" id="correo" class="form-control form-control-lg custom-form-control" required>
-                </div>
-                <div class="col-sm-12 col-md-4 col-xs-12 my-2">
-                    <label for="mensaje" class="form-label">Envía un mensaje</label>
-                    <textarea name="mensaje" id="mensaje" class="form-control form-control-lg custom-form-control" cols="30" rows="5" required></textarea>
-                </div>
-                <div class="col-12 my-2">
-                    <button type="submit" class="btn btn-lg btn-primary" id="enviar-btn">Enviar</button>
-                </div>
-
+                <button type="submit" class="btn btn-lg btn-primary" id="enviar-btn">Enviar</button>
             </form>
         </div>
     </div>
