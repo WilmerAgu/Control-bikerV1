@@ -222,22 +222,33 @@
 
     <!-- book a table Section  -->
     <div class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items" id="book-table">
+
+        <div class="form-content">
+            <h2 class="section-title mb-5">Envíanos un mensaje</h2>
+            <form action="https://formsubmit.co/controlbiker2024@gmail.com" method="POST" id="contact-form" class="row">
         <div class="">
-            <h2 class="section-title mb-5">RESERVA UNA MESA</h2>
+            <h2 class="section-title mb-5">Escribenos Tus Dudas</h2>
             <div class="row mb-5">
                 <div class="col-sm-6 col-md-4 col-xs-12 my-2">
-                    <input type="text" id="name" class="form-control form-control-lg custom-form-control" placeholder="Nombre">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control form-control-lg custom-form-control" required>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xs-12 my-2">
-                    <input type="email" id="email" class="form-control form-control-lg custom-form-control" placeholder="Correo">
+                    <label for="email" class="form-label">Tu correo</label>
+                    <input type="email" name="correo" id="correo" class="form-control form-control-lg custom-form-control" required>
                 </div>
                 <div class="col-sm-12 col-md-4 col-xs-12 my-2">
-                    <textarea id="message" class="form-control form-control-lg custom-form-control" placeholder="Mensaje"></textarea>
+                    <label for="mensaje" class="form-label">Envía un mensaje</label>
+                    <textarea name="mensaje" id="mensaje" class="form-control form-control-lg custom-form-control" cols="30" rows="5" required></textarea>
                 </div>
-            </div>
-            <button class="btn btn-lg btn-primary" id="send-btn">Enviar</button>
+                <div class="col-12 my-2">
+                    <button type="submit" class="btn btn-lg btn-primary" id="enviar-btn">Enviar</button>
+                </div>
+
+            </form>
         </div>
     </div>
+
     <!-- BLOG Section  -->
     <div id="blog" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn">
         <h2 class="section-title py-5">Ten en Cuenta</h2>
@@ -332,7 +343,7 @@
         <div class="row mt-3 mb-5">
             <div class="col-md-4 my-3 my-md-0">
                 <div class="testmonial-card">
-                    <h3 class="testmonial-title">Andres osorio</h3>
+                    <h3 class="testmonial-title">Andres Osorio</h3>
                     
                     <div class="testmonial-body">
                         <p>"¡La verdad, esta página de motos es una chimba! Desde que empecé a usarla, mi vida de motociclista es otra cosa. No me toca ni preocuparme por cuándo toca llevar la nave al taller, ellos se encargan de todo. Y los consejos que mandan para cuidar la moto, ¡uy parce, qué bacanos! ¡Pa' recomendarla de una!"</p>
@@ -341,7 +352,7 @@
             </div>
             <div class="col-md-4 my-3 my-md-0">
                 <div class="testmonial-card">
-                    <h3 class="testmonial-title">Thomas gomez</h3>
+                    <h3 class="testmonial-title">Thomas Gomez</h3>
                     <div class="testmonial-body">
                         <p>"Desde que le caí a esta página de motos, mi vida en dos ruedas es otra cosa. Ya ni me preocupo por acordarme cuándo toca hacerle el mantenimiento a la nave, ellos siempre están pendientes y me avisan. Y los consejitos que tiran para mantener la moto en forma, ¡pues son oro puro! ¡Recomendadísima, parce!"</p>
                     </div>
@@ -349,7 +360,7 @@
             </div>
             <div class="col-md-4 my-3 my-md-0">
                 <div class="testmonial-card">
-                    <h3 class="testmonial-title">Gonzaga osorio</h3>
+                    <h3 class="testmonial-title">Gonzaga Osorio</h3>
                     <div class="testmonial-body">
                         <p>"¡Hablando claro, esta página de motos es un hit! Desde que la uso, mi moto siempre está en las mejores manos. Me avisan justo cuando toca llevarla al taller y hasta me tiran tips para que la nave dure más tiempo rodando suavecito. ¡De verdad, la mejor opción pa' cualquier motociclista que quiera cuidar su parche en Colombia!"</p>
                     </div>
