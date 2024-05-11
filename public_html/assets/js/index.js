@@ -1,18 +1,4 @@
-/*!
-=========================================================
-* FoodHut Landing page
-=========================================================
 
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// smooth scroll
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
 
@@ -44,6 +30,7 @@ function initMap() {
       map: map
     });
  }
+ //boton ver mas pag ppal
 
  let hideText_btn = document.getElementById('hideText_btn');
 
@@ -62,5 +49,31 @@ function initMap() {
     }
  }
 
+ // sesion quienes somos
+ const hideParagraphButton = document.getElementById('hideParagraphButton');
+const toggleTextButton = document.getElementById('toggleTextButton');
+const aboutParagraph1 = document.getElementById('aboutParagraph1');
+const aboutParagraph2 = document.getElementById('aboutParagraph2');
+
+hideParagraphButton.addEventListener('click', function() {
+    if (aboutParagraph1.style.display !== 'none') {
+        aboutParagraph1.style.display = 'none';
+        aboutParagraph2.style.display = 'none';
+        toggleTextButton.style.display = 'none'; // Ocultar el segundo botón
+    } else {
+        aboutParagraph1.style.display = 'block';
+        toggleTextButton.style.display = 'block'; // Mostrar el segundo botón
+    }
+});
+
+toggleTextButton.addEventListener('click', function() {
+    if (aboutParagraph1.style.display !== 'none') {
+        aboutParagraph1.style.display = 'none';
+        aboutParagraph2.style.display = 'block';
+    } else {
+        aboutParagraph1.style.display = 'block';
+        aboutParagraph2.style.display = 'none';
+    }
+});
 
 

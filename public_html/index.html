@@ -98,26 +98,39 @@
     
 
      <!--  quienes somos  -->
-     <div id="about" class="container-fluid wow fadeIn" id="about" data-wow-duration="1.5s">
+     <div id="about" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
         <div class="row">
             <div class="col-lg-6">
                 <div class="row justify-content-center">
                     <div class="col-sm-8 py-5 my-5">
-                        <h2 class="mb-4">Quienes Somos</h2>
-                        <p>Como desarrolladores de la aplicación de mantenimiento y control de motos, somos un equipo apasionado de 
-                            desarrolladores  de software, diseñadores de experiencia de usuario y entusiastas de las motocicletas. 
+                        <div class="btn-group">
+                            <button class="btn btn-lg btn-primary" id="hideParagraphButton">Quienes somos</button>
+                        </div>
+                        <p id="aboutParagraph1" style="font-family: Arial, sans-serif;">Como desarrolladores de la aplicación de mantenimiento y control de motos, somos un equipo apasionado de 
+                            desarrolladores de software, diseñadores de experiencia de usuario y entusiastas de las motocicletas. 
                             Nos unimos con la visión de mejorar la experiencia de propiedad y conducción de motos mediante el uso de la 
                             tecnología. Nos comprometemos a crear una herramienta que no solo simplifique el mantenimiento de las motocicletas, 
                             sino que también fomente una cultura de conducción segura y responsable. Con nuestra combinación de habilidades 
                             técnicas y amor por las dos ruedas, estamos dedicados a proporcionar la mejor solución posible para los motociclistas 
                             de todo el mundo.
-                        </p>                      
+                        </p>
+                        <p id="aboutParagraph2" style="font-family: Arial, sans-serif; display: none;">As developers of the motorcycle maintenance and control application,
+                             we are a passionate team of software developers, user experience designers, and motorcycle enthusiasts.
+                              We come together with the vision of enhancing the ownership and riding experience of motorcycles through the use of technology. 
+                              We are committed to creating a tool that not only simplifies motorcycle maintenance
+                               but also promotes a culture of safe and responsible riding. With our combination of technical skills 
+                               and love for two-wheelers, 
+                            we are dedicated to providing the best possible solution for motorcyclists worldwide
+                        </p>
+                       <div>
+                        <button class="btn btn-lg btn-primary" id="toggleTextButton">Cambiar Texto</button>
+                       </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 has-img-quienesSomos"></div>
         </div>
-    </div>
+    </div>
     
     <!--  mision y vision -->
     <div id="about" class="container-fluid wow fadeIn" id="about"data-wow-duration="1.5s">
