@@ -2767,6 +2767,9 @@ fieldset:disabled a.btn {
   background-color: var(--primary);
   border-color: var(--primary);
 }
+.btnn-var{
+  margin-right: 20px;
+}
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
@@ -3295,12 +3298,12 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-.btn-lg, .btn-group-lg > .btn {
-  padding: 0.8rem 1.6rem;
+/* .btn-lg, .btn-group-lg > .btn {
+  padding: 0.8rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.15rem;
-}
+} */
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
@@ -4078,6 +4081,7 @@ input[type="button"].btn-block {
   background-color: rgba(255, 33, 79, 0.5);
 }
 
+
 .custom-switch {
   padding-left: 2.25rem;
 }
@@ -4443,6 +4447,7 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  margin-left: 10px;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -10661,7 +10666,8 @@ button.bg-dark:focus {
 
 .text-center {
   text-align: center !important;
-  margin-top: 5rem;
+  margin-top: 6rem;
+  
 }
 
 @media (min-width: 576px) {
@@ -10750,6 +10756,11 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important;
+}
+.text-ppal {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
 }
 
 .text-primary {
@@ -11133,42 +11144,23 @@ pre {
 .navbar-brand .brand-img {
   width: 140px;
   display: inline-block;
-  margin:  auto;
+  margin: auto;
   opacity: 1;
   visibility: visible;
   -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
   border-radius: 50%;
 }
+
 .hide{
   display: none;
 }
 .show{
   display: block;
 }
-.btn-ver{
-  display: inline-block;
-  font-weight: 400;
-  color: white;
-  text-align: center;
-  background-color: transparent;
-  border: none;
-  border-radius: 0.2rem;
-  padding: 10px 10px;
-  font-size: 15px;
-  outline: none !important;
-  transition: transform 0.3s;
-  transition: background-color 0.3s, color 0.3s;
-}
 
-.btn-ver:hover {
-  background-color: var(--primary); /* Cambia a un color oscuro al pasar el mouse */
-  color: #fff; /* Cambia a blanco al pasar el mouse */
-  transform: scale(1.1);
-}
-.btn-ver:active {
-  transform: scale(0.95); /* Reduce ligeramente el tamaño al hacer clic */
-}
+
+
 
 .navbar-brand .brand-txt {
   position: absolute;
@@ -11186,6 +11178,43 @@ pre {
   transition: all 0.2s linear 0s;
   font-family: "Oswald", sans-serif;
 }
+
+
+.slider-card{
+  margin-top: 10rem;
+  position: relative;
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+}
+.item-card{
+  position: absolute;
+  width: 400px;
+  height: 320px;
+  text-align: start;
+  background-color: rgba(0, 0, 0, 0.00) ;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+  left: calc(50% - 110px);
+  top: 2rem;
+}
+#next, #prev{
+  position: absolute;
+  top: 40%;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  left: 400px;
+}
+#next{
+  left: unset;
+  right: 400px;
+}
+
 
 .affix {
   min-height: 80px;
@@ -11226,7 +11255,7 @@ pre {
 
 .overlay {
   position: absolute;
-  top: -14%;
+  top: -13%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -11236,20 +11265,12 @@ pre {
   align-items: center;
   text-align: center;
 }
-.mb-ppal{
-  margin-top: 10rem;
-  font-size: 20px;
-  font-weight: 600;
-}
-.text-ppal{
-  font-weight: 400;
-  font-size: 18px;
-  margin-top: 0.1rem;
-}
-.btns-ppal {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+
+.btn-quienesSomos{
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-right: 6rem;
+  margin-top: 2rem;
 }
 
 
@@ -11312,14 +11333,22 @@ pre {
 .root {
   max-width: 1440px;
 }
+.btn-mb{
+  margin-bottom: 2rem;
+}
 
 
 .has-img-quienesSomos {
-  background: url(../imgs/quinessomos.jpg) no-repeat center center;
+  background: url(../imgs/programacion.jpg) no-repeat center center;
   background-size: cover;
   margin-bottom: 40px;
 }
-.has-img-bg {
+.has-img-mision {
+  background: url(../imgs/quinessomos.jpg) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.has-img-vision {
   background: url(../imgs/mision.jpg) no-repeat center center;
   background-size: cover;
   margin-bottom: 20px;
@@ -11440,3 +11469,7 @@ pre {
   opacity: 1;
 }
 
+marca{
+  color: #f07a04;
+  font-size: 15px;
+}

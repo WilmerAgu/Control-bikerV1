@@ -14,7 +14,12 @@
 
     <!-- Bootstrap + FoodHut main styles -->
 	<link rel="stylesheet" href="assets/css/styles.css">
-   
+    
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 
     
 </head>
@@ -28,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">Inicio</a>
+                    <a class="nav-link" href="/public_html/index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">Quienes Somos</a>
@@ -39,7 +44,7 @@
                 <li class="nav-item">
                 </li>
             </ul>
-            <a class="navbar-brand m-auto" href="#">
+            <a class="navbar-brand m-auto" href="/public_html/index.html">
                 <img src="assets/imgs/logo.jpeg" class="brand-img" alt="">
                 <span class="brand-txt">Control-Biker</span>
             </a>
@@ -51,10 +56,10 @@
                     <a class="nav-link" href="#testmonial">Reseñas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contactanos</a>
+                    <a class="nav-link" href="#book-table">Contactanos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/routes/login.html" class="btn btn-primary ml-xl-4">Iniciar Sesion</a>
+                    <a href="./assets/routes/login.html" class="btn btn-primary ml-xl-4 btnn-var">Iniciar Sesion</a>
                 </li>
             </ul>
         </div>
@@ -67,101 +72,138 @@
                 <!-- Agrega más fuentes de video si es necesario para la compatibilidad con diferentes navegadores -->
                 Tu navegador no admite la reproducción de videos.
             </video>
-            <div class="overlay text-white text-center">
-                <!-- <h1 class="display-2 font-weight-bold my-3">Control-Biker</h1> -->
-                <h3 class="display-7  mb-ppal">Potencia tu viaje, mantén tu moto en forma: La app que te lleva más lejos.</h6>
-                <h5 class="container text-ppal">Bienvenido a nuestra aplicación Control-Biker, donde puedes llevar un control 
-                    exhaustivo de todas las piezas, repuestos y mantenimientos de tus motos. ¿Quieres saber 
-                    qué le has realizado a tu moto en cada visita al taller? Con nuestra aplicación, es fácil.
-                    <br><br>
-                    <span class="hide" id="hideText">
-                        Nuestra plataforma te ofrece una forma conveniente de registrar cada mantenimiento realizado en tus motos. 
-                        Desde cambios de aceite hasta reparaciones importantes, puedes ingresar los detalles de cada servicio, 
-                        incluyendo la fecha, el kilometraje, los repuestos utilizados y cualquier otra información relevante. 
-                        ¿Instalaste un nuevo filtro de aire? ¿Cambios en las pastillas de freno? Todo queda registrado 
-                        para que nunca pierdas de vista el historial de mantenimiento de tu moto.
-                        <br><br>
-                        Además, nuestra aplicación te ofrece recordatorios automáticos para el próximo mantenimiento programado. 
-                        Nunca más olvidarás cuándo es el momento de cambiar el aceite o revisar los frenos. Nos encargamos de 
-                        recordarte las fechas importantes para que tu moto esté siempre en óptimas condiciones.
-                    </span><br>
-                    <button class="btn-ver " id="hideText_btn">Ver Mas</button>             
-                </h5>
+            <div class="overlay text-white text-center ">
+
+                <div class="slider-card">
+                    <div class="item-card">                       
+                        <h1>Cuida tu moto ¡Ten el control! </h1>                       
+                    </div>
+                    <div class="item-card">
+                        <h1>Accesibilidad</h1>
+                        <h4>
+                            Desde cualquier dispositivo podrás llevar el registro de piezas, cambios y mantenimientos realizados a tu moto con mayor facilidad.
+                        </h4>
+                    </div>
+                    <div class="item-card">
+                        <h1>Alertas</h1>
+                        <h4>                            
+                            Puedes programar alertas para los próximos mantenimientos o cambios que debas realizar a tu moto.
+                        </h4>
+                    </div>
+                    <div class="item-card">
+                        <h1>Combustible</h1>
+                        <h4>
+                            Lleva el calculo de cuanto está consumiendo, cual es el rendimiento de tu moto entre recargas de combustible.
+                        </h4>
+                    </div>
+                    <div class="item-card">
+                        <h1>Mantenimientos</h1>
+                        <h4>
+                            Guarda el registro de cada pieza, todo lo realizado en los mantenimientos y accede al historial cuando quieras.
+                        </h4>
+                    </div>
+                    <div class="item-card">                       
+                        <h1>Con Control-Biker</h1>
+                        <h4>
+                        Tendras registros fáciles y a la mano, no importa la marca, tampoco el cilindraje. 
+                        </h4>
+                    </div>
+                    <div class="item-card">
+                        <h1>Control-Biker <br> Es para todos <br>                
+                            ¡Es para ti!
+                        </h1>
+                    </div>
+                    <button id="next">></button>
+                    <button id="prev"><</button>
+                </div>
                 <div class="btns-ppal">
                     <a href="./assets/routes/login.html">
                         <img src="./assets/imgs/googleplay.png" alt="Google Play" width="120" height="40">
                     </a>
+                    <a href="./assets/routes/login.html">
+                        <img src="/public_html/assets/imgs/Logo-App-Store1.jpeg" alt="Google Play" width="120" height="40">
+                    </a>
                 </div>
-            </div>
+            </div>           
         </div>
     </header>
     
 
      <!--  quienes somos  -->
-     <div id="about" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="row justify-content-center">
-                    <div class="col-sm-8 py-5 my-5">
-                        <div class="btn-group">
-                            <button class="btn btn-lg btn-primary" id="hideParagraphButton">Quienes somos</button>
-                        </div>
-                        <p id="aboutParagraph1" style="font-family: Arial, sans-serif;">Como desarrolladores de la aplicación de mantenimiento y control de motos, somos un equipo apasionado de 
-                            desarrolladores de software, diseñadores de experiencia de usuario y entusiastas de las motocicletas. 
-                            Nos unimos con la visión de mejorar la experiencia de propiedad y conducción de motos mediante el uso de la 
-                            tecnología. Nos comprometemos a crear una herramienta que no solo simplifique el mantenimiento de las motocicletas, 
-                            sino que también fomente una cultura de conducción segura y responsable. Con nuestra combinación de habilidades 
-                            técnicas y amor por las dos ruedas, estamos dedicados a proporcionar la mejor solución posible para los motociclistas 
-                            de todo el mundo.
-                        </p>
-                        <p id="aboutParagraph2" style="font-family: Arial, sans-serif; display: none;">As developers of the motorcycle maintenance and control application,
-                             we are a passionate team of software developers, user experience designers, and motorcycle enthusiasts.
-                              We come together with the vision of enhancing the ownership and riding experience of motorcycles through the use of technology. 
-                              We are committed to creating a tool that not only simplifies motorcycle maintenance
-                               but also promotes a culture of safe and responsible riding. With our combination of technical skills 
-                               and love for two-wheelers, 
-                            we are dedicated to providing the best possible solution for motorcyclists worldwide
-                        </p>
-                       <div>
-                        <button class="btn btn-lg btn-primary" id="toggleTextButton">Cambiar Texto</button>
-                       </div>
+    <!-- Sección Quienes Somos -->
+<div id="quienesSomos" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="row justify-content-center">
+                <div class="col-sm-8 py-5 my-5">
+                    <div class="btn-group">
+                        <button class="btn btn-lg btn-mb btn-primary btn-toggle" data-target="quienesSomos">Quienes somos</button>
                     </div>
+                    <p class="texto-quienesSomos" style="display: none;">
+                        Somos un equipo apasionado de desarrolladores de software, diseñadores 
+                        de experiencia de usuario y amantes de las motocicletas. Nos unimos con 
+                        la visión de mejorar la experiencia de propiedad y conducción de motos mediante 
+                        tecnología innovadora. Nuestro objetivo es crear una herramienta que permita 
+                        llevar el registro y control de las intervenciones realizadas a nuestros vehículos, 
+                        además de promover una cultura de conducción segura y responsable.
+                    </p>
                 </div>
             </div>
-            <div class="col-lg-6 has-img-quienesSomos"></div>
         </div>
-    </div>
-    
-    <!--  mision y vision -->
-    <div id="about" class="container-fluid wow fadeIn" id="about"data-wow-duration="1.5s">
-        <div class="row">
-            <div class="col-lg-6 has-img-bg"></div>
-            <div class="col-lg-6">
-                <div class="row justify-content-center">
-                    <div class="col-sm-8 py-5 my-5">
-                        <h2 class="mb-4">Misión</h2>
-                            <p>Nuestra misión es proporcionar a los motociclistas la herramienta definitiva para mantener sus máquinas 
-                                en óptimas condiciones y garantizar su seguridad en cada viaje. Nos comprometemos a ofrecer una experiencia
-                                intuitiva y completa que simplifique el mantenimiento, brinde recordatorios oportunos y fomente una cultura
-                                de conducción responsable. Queremos ser el compañero confiable de cada motociclista, permitiéndoles disfrutar
-                                al máximo de su pasión por las dos ruedas sin preocupaciones.
-                            </p>
-                        <h2 class="mb-4">Visión</h2>
-                            <p>Nuestra visión es transformar la experiencia de propiedad y conducción de motocicletas al ofrecer la plataforma 
-                                más avanzada y completa para el mantenimiento y control de motos. Visualizamos un futuro donde cada motociclista 
-                                confíe en nuestra app como su aliado indispensable, aprovechando tecnologías innovadoras para optimizar el rendimiento,
-                                maximizar la seguridad y potenciar la pasión por la conducción. Aspiramos a ser reconocidos como líderes en el mercado, 
-                                impulsando una comunidad de motociclistas comprometidos con el cuidado de sus máquinas y la promoción de una cultura de 
-                                conducción responsable.
-                            </p>
+        <div class="col-lg-6 has-img-quienesSomos"></div>
+    </div>
+</div>
+
+<!-- Sección Misión -->
+<div id="mision" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
+    <div class="row">
+        <div class="col-lg-6 has-img-mision"></div>
+        <div class="col-lg-6">
+            <div class="row justify-content-center">
+                <div class="col-sm-8 py-5 my-5">
+                    <div class="btn-group">
+                        <button class="btn btn-lg btn-mb btn-primary btn-toggle" data-target="mision">Misión</button>
                     </div>
+                    <p class="texto-mision" style="display: none;">
+                        Nuestra misión es proporcionar a los motociclistas la herramienta definitiva para mantener sus máquinas 
+                        en óptimas condiciones y garantizar su seguridad en cada viaje. Nos comprometemos a ofrecer una experiencia
+                        intuitiva y completa que simplifique el mantenimiento, brinde recordatorios oportunos y fomente una cultura
+                        de conducción responsable. Queremos ser el compañero confiable de cada motociclista, permitiéndoles disfrutar
+                        al máximo de su pasión por las dos ruedas sin preocupaciones.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Sección Visión -->
+<div id="vision" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="row justify-content-center">
+                <div class="col-sm-8 py-5 my-5">
+                    <div class="btn-group">
+                        <button class="btn btn-lg  btn-primary btn-toggle" data-target="vision">Visión</button>
+                    </div>
+                    <p class="texto-vision" style="display: none;">
+                        Nuestra visión es transformar la experiencia de propiedad y conducción de motocicletas al ofrecer la plataforma 
+                        más avanzada y completa para el mantenimiento y control de motos. Visualizamos un futuro donde cada motociclista 
+                        confíe en nuestra app como su aliado indispensable, aprovechando tecnologías innovadoras para optimizar el rendimiento,
+                        maximizar la seguridad y potenciar la pasión por la conducción. Aspiramos a ser reconocidos como líderes en el mercado, 
+                        impulsando una comunidad de motociclistas comprometidos con el cuidado de sus máquinas y la promoción de una cultura de 
+                        conducción responsable.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 has-img-vision"></div>
+    </div>
+</div>
+
 
     <!-- Logos de motos -->
-
+<!-- 
     <div class="gallary row">
         <div class="col-sm-6 col-lg-1 gallary-item wow fadeIn">
             <img src="assets/imgs/suzuki.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img" onclick="abrirModal(this)">
@@ -230,13 +272,16 @@
                 <i class="gallary-icon ti-plus"></i>
             </a>
         </div>
-            
+             -->
 
     <!-- dejanos tu mensaje -->
     <div class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items" id="book-table">
         <div class="">
             <h2 class="section-title mb-5">Envianos Tu Mensaje</h2>
             <form action="https://formsubmit.co/controlbiker2024@gmail.com" method="POST" id="contact-form" class="row">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/public_html/index.html">
+                <!-- Campo oculto para el mensaje de éxito -->
+                <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
                 <div class="row mb-5">
                     <div class="col-sm-6 col-md-4 col-xs-12 my-2">
                         <input type="text" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="Nombre">
@@ -277,7 +322,12 @@
                             <div class="card-body">
                                 <!-- <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1> -->
                                 <h4 class="pt20 pb20">Cambio de Aceite</h4>
-                                <p class="text-white">El cambio de aceite es una tarea de mantenimiento esencial para garantizar el rendimiento y la durabilidad del motor de tu motocicleta. Es importante seguir las recomendaciones del fabricante en cuanto al intervalo de cambio de aceite, que generalmente varía entre 3000 y 6000 kilómetros, dependiendo del tipo de aceite y del uso de la motocicleta. </p>
+                                <p class="text-white">El cambio de aceite es una tarea de mantenimiento esencial para 
+                                    garantizar el rendimiento y la durabilidad del motor de tu motocicleta.
+                                    Es importante seguir las recomendaciones del fabricante en cuanto al intervalo 
+                                    de cambio de aceite, que generalmente varía entre 3000 y 6000 kilómetros, 
+                                    dependiendo del tipo de aceite y del uso de la motocicleta. 
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -288,7 +338,12 @@
                                 <!-- <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$12</a></h1> -->
                                 <h4 class="pt20 pb20">Filtro de Aire</h4>
                                 <p class="text-white">
-                                    El filtro de aire es una parte crucial del sistema de admisión de tu motocicleta. Debes revisarlo regularmente y reemplazarlo según las recomendaciones del fabricante para mantener un flujo de aire óptimo hacia el motor. Un filtro de aire limpio y en buen estado ayuda a maximizar el rendimiento del motor y a prolongar su vida útil al evitar la entrada de suciedad y partículas dañinas. Un mantenimiento adecuado del filtro de aire es esencial para garantizar un funcionamiento suave y eficiente de tu motocicleta en todas las condiciones. </p>
+                                    El filtro de aire es una parte crucial del sistema de admisión de tu motocicleta. 
+                                    Debes revisarlo regularmente y reemplazarlo según las recomendaciones del fabricante 
+                                    para mantener un flujo de aire óptimo hacia el motor. Un filtro de aire limpio y en 
+                                    buen estado ayuda a maximizar el rendimiento del motor y a prolongar su vida útil al 
+                                    evitar la entrada de suciedad y partículas dañinas.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -298,7 +353,13 @@
                             <div class="card-body">
                                 <!-- <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$8</a></h1> -->
                                 <h4 class="pt20 pb20">Pastas de Freno</h4>
-                                <p class="text-white">Las pastillas de freno desempeñan un papel vital en la seguridad de tu motocicleta. Asegúrate de inspeccionarlas regularmente y reemplazarlas cuando estén desgastadas. Utiliza pastillas de freno de calidad recomendadas por el fabricante para un rendimiento óptimo. Un mantenimiento adecuado de las pastillas de freno garantiza una frenada eficaz y segura en todo momento, mejorando la seguridad y la experiencia de conducción. </p>
+                                <p class="text-white">
+                                    Las pastillas de freno desempeñan un papel vital en la seguridad de tu motocicleta. 
+                                    Asegúrate de inspeccionarlas regularmente y reemplazarlas cuando estén desgastadas. 
+                                    Utiliza pastillas de freno de calidad recomendadas por el fabricante para un rendimiento
+                                    óptimo. Un mantenimiento adecuado de las pastillas de freno garantiza una frenada 
+                                    eficaz y segura en todo momento. 
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -312,7 +373,13 @@
                             <div class="card-body">
                                 <!-- <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$15</a></h1> -->
                                 <h4 class="pt20 pb20">Liquido de Frenos</h4>
-                                <p class="text-white">El líquido de frenos es crucial para el rendimiento seguro de tu motocicleta. Verifica regularmente el nivel y la calidad del líquido, reemplazándolo según las recomendaciones del fabricante. Un líquido de frenos fresco y en buen estado garantiza una frenada eficaz y reduce el riesgo de fallos en el sistema de frenado, proporcionando una experiencia de conducción más segura y confiable. </p>
+                                <p class="text-white">                                    
+                                    El líquido de frenos es crucial para el rendimiento seguro de tu motocicleta. 
+                                    Verifica regularmente el nivel y la calidad del líquido, reemplazándolo según las 
+                                    recomendaciones del fabricante. Un líquido de frenos fresco y en buen estado garantiza 
+                                    una frenada eficaz y reduce el riesgo de fallos en el sistema de frenado, proporcionando 
+                                    una experiencia de conducción más segura y confiable. 
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -322,7 +389,14 @@
                             <div class="card-body">
                                 <!-- <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$29</a></h1> -->
                                 <h4 class="pt20 pb20">Lubricacion y Tension de Cadena</h4>
-                                <p class="text-white">La cadena de transmisión de una motocicleta necesita lubricación y tensión adecuadas para un funcionamiento óptimo. La lubricación regular reduce el desgaste y la fricción, prolongando la vida útil. Revisa la tensión regularmente para evitar problemas de seguridad y desgaste prematuro. Sigue las especificaciones del fabricante para la tensión adecuada y lubrica según las recomendaciones del manual del propietario." </p>
+                                <br>
+                                <p class="text-white">
+                                    La cadena de transmisión de una motocicleta necesita lubricación y tensión adecuadas para 
+                                    un funcionamiento óptimo. La lubricación regular reduce el desgaste y la fricción, 
+                                    prolongando la vida útil. Revisa la tensión regularmente para evitar problemas de 
+                                    seguridad y desgaste prematuro. Sigue las especificaciones del fabricante para la 
+                                    tensión adecuada y lubrica según las recomendaciones del manual del propietario." 
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -332,7 +406,13 @@
                             <div class="card-body">
                                 <!-- <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1> -->
                                 <h4 class="pt20 pb20">Presión de Llantas</h4>
-                                <p class="text-white">Mantener la presión adecuada de las llantas es esencial para la seguridad y el rendimiento de tu motocicleta. Verifica regularmente la presión con un medidor de neumáticos y ajusta según las recomendaciones del fabricante. Una presión incorrecta puede afectar el manejo, el desgaste de los neumáticos y la estabilidad. Recuerda considerar factores como la carga y la temperatura ambiente. Mantén las llantas infladas correctamente para reducir el riesgo de pinchazos y asegurar un manejo óptimo en todo momento. </p>
+                                <p class="text-white">
+                                    Mantener la presión adecuada de las llantas es esencial para la seguridad y el rendimiento 
+                                    de tu motocicleta. Verifica regularmente la presión con un medidor de neumáticos y 
+                                    ajusta según las recomendaciones del fabricante. Una presión incorrecta puede afectar 
+                                    el manejo, el desgaste de los neumáticos y la estabilidad. Recuerda considerar factores 
+                                    como la carga y la temperatura ambiente.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -380,11 +460,11 @@
         <div class="row">
             <div class="col-sm-4">
                 <h3>Email</h3>
-                <P class="text-muted">controlbiker2024@gmail.com</P>
+                <a href="mailto:controlbiker2024@gmail.com">controlbiker2024@gmail.com</a>
             </div>
             <div class="col-sm-4">
-                <h3>Contactanos</h3>
-                <P class="text-muted">+57 305 351 6345</P>
+                <h3>Telefono</h3>
+                <a href="tel:573238162490">323 816 2490</a>
             </div>
             <div class="col-sm-4">
                 <h3>Ubicacion</h3>
@@ -412,6 +492,8 @@
 
     <!-- FoodHut js -->
     <script src="assets/js/index.js"></script>
+    <script src="./assets/js/card.js"></script> 
+    <script src="./assets/js/quienesSomos.js"></script> 
 
 
 </body>

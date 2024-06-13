@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/fotos-premium/motocicleta-negra-rodeada-estandarte-humo-copyspace_110488-4646.jpg?w=1380');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding-top: 60px; /* Espacio para el menú */
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: #f80606;
+    color: #000;
+  }
+  
+  .dropdown-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(250, 14, 10, 0.923);
+    margin-bottom: 20px;
+  }
+  
+  .dropdown {
+    width: 200px;
+    margin: 0 10px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #0b0808;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  select:hover {
+    background-color:#f80606;
+    color: #fff;
+  }
+  
+  option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  button:active {
+    transform: scale(0.98); 
+  }
+  
+  .h3-menu {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  h3{
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .marca{
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  .text-muted{
+    color: #f80606;
+  }
+
+  
